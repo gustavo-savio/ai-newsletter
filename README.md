@@ -1,6 +1,6 @@
 # AI & Tech Newsletter
 
-Newsletter simples e minimalista com noticias sobre tecnologia e inteligencia artificial. Interface limpa com cards clicaveis, inspirada em layouts de newsletters modernas.
+Newsletter simples e minimalista com notícias sobre tecnologia e inteligência artificial. Interface limpa com cards clicáveis, inspirada em layouts de newsletters modernas.
 
 ## Stack
 
