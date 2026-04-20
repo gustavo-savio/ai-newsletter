@@ -1,0 +1,104 @@
+/* ============================================================
+   DESIGN TOKENS — AI & Tech Newsletter
+   ============================================================ */
+
+:root {
+  /* --- Color: Brand --- */
+  --color-brand-primary:    #FF5C35;
+  --color-brand-accent:     #4F9EFF;
+  --color-brand-glow:       rgba(255, 92, 53, 0.15);
+
+  /* --- Color: Surface (dark editorial theme) --- */
+  --color-bg:               #080C14;
+  --color-surface-default:  #0F1420;
+  --color-surface-raised:   #161D2E;
+  --color-surface-card:     #111827;
+  --color-surface-hover:    #1A2236;
+
+  /* --- Color: Text --- */
+  --color-text-primary:     #F0F4FC;
+  --color-text-secondary:   #8896B3;
+  --color-text-muted:       #4E5D7A;
+  --color-text-inverse:     #080C14;
+  --color-text-link:        #4F9EFF;
+
+  /* --- Color: Border --- */
+  --color-border-default:   #1E2A42;
+  --color-border-subtle:    #151E30;
+  --color-border-focus:     #4F9EFF;
+
+  /* --- Color: Feedback --- */
+  --color-feedback-success: #22C55E;
+  --color-feedback-warning: #F59E0B;
+  --color-feedback-error:   #EF4444;
+  --color-feedback-info:    #3B82F6;
+
+  /* --- Color: Category Tags --- */
+  --tag-ai:       #7C3AED;
+  --tag-startup:  #0891B2;
+  --tag-hardware: #D97706;
+  --tag-security: #DC2626;
+  --tag-software: #2563EB;
+  --tag-business: #059669;
+
+  /* --- Typography: Families --- */
+  --font-display: 'JetBrains Mono', monospace;
+  --font-body:    'JetBrains Mono', monospace;
+  --font-mono:    'JetBrains Mono', monospace;
+
+  /* --- Typography: Scale (mobile-first, rem) --- */
+  --text-xs:   0.75rem;    /* 12px */
+  --text-sm:   0.8125rem;  /* 13px */
+  --text-base: 1rem;       /* 16px */
+  --text-lg:   1.125rem;   /* 18px */
+  --text-xl:   1.25rem;    /* 20px */
+  --text-2xl:  1.5rem;     /* 24px */
+  --text-3xl:  1.875rem;   /* 30px */
+  --text-4xl:  2.25rem;    /* 36px */
+  --text-5xl:  3rem;       /* 48px */
+
+  /* --- Typography: Weights --- */
+  --font-regular:  400;
+  --font-medium:   500;
+  --font-semibold: 600;
+  --font-bold:     700;
+  --font-black:    900;
+
+  /* --- Spacing: 4px base grid --- */
+  --space-1:  0.25rem;
+  --space-2:  0.5rem;
+  --space-3:  0.75rem;
+  --space-4:  1rem;
+  --space-5:  1.25rem;
+  --space-6:  1.5rem;
+  --space-8:  2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+
+  /* --- Border Radius --- */
+  --radius-sm:   4px;
+  --radius-md:   8px;
+  --radius-lg:   12px;
+  --radius-xl:   16px;
+  --radius-2xl:  24px;
+  --radius-full: 9999px;
+
+  /* --- Shadows --- */
+  --shadow-sm:    0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md:    0 4px 12px rgba(0, 0, 0, 0.5);
+  --shadow-lg:    0 8px 32px rgba(0, 0, 0, 0.6);
+  --shadow-glow:  0 0 24px rgba(255, 92, 53, 0.2);
+  --shadow-card:  0 2px 8px rgba(0, 0, 0, 0.4), 0 0 0 1px var(--color-border-default);
+
+  /* --- Transitions --- */
+  --transition-fast:   150ms ease;
+  --transition-base:   250ms ease;
+  --transition-slow:   400ms ease;
+
+  /* --- Layout --- */
+  --container-max: 1280px;
+  --header-h:      64px;
+}
