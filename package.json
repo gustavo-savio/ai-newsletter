@@ -1,18 +1,22 @@
 {
   "name": "ai-newsletter",
-  "version": "1.0.0",
-  "description": "Projeto simples de newsletter focado em notícias sobre Inteligência Artificial e Tecnologia.",
-  "main": "index.js",
+  "version": "2.0.0",
+  "description": "AI & Tech Newsletter — dark editorial frontend with live news cards, category filters, and skeleton loaders.",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node public/assets/js/server.js",
+    "dev":   "node --watch public/assets/js/server.js"
   },
-  "keywords": [],
+  "keywords": ["newsletter", "ai", "tech", "newsapi", "express"],
   "author": "",
   "license": "ISC",
   "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
   "dependencies": {
-    "dotenv": "^17.4.1",
-    "express": "^5.2.1",
-    "node-fetch": "^3.3.2"
+    "dotenv":      "^17.4.1",
+    "express":     "^5.2.1",
+    "node-fetch":  "^3.3.2"
   }
 }
