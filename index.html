@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="AI & Tech Newsletter — top technology and artificial intelligence headlines, curated daily." />
+  <meta name="theme-color" content="#080C14" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="AI & Tech Newsletter" />
+  <meta property="og:description" content="Top technology and AI headlines, curated daily." />
+  <meta property="og:type" content="website" />
+
+  <title>AI & Tech — Daily Newsletter</title>
+
+  <!-- Preconnect for performance -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Fonts: Syne (display) + Inter (body) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  <link rel="stylesheet" href="public/assets/css/variables.css" />
+  <link rel="stylesheet" href="public/assets/css/reset.css" />
+  <link rel="stylesheet" href="public/assets/css/layout.css" />
+  <link rel="stylesheet" href="public/assets/css/components.css" />
+</head>
+
+<body>
+
+  <!-- ===== SITE HEADER ===================================================== -->
+  <header class="site-header" role="banner">
+    <div class="container">
+
+      <!-- Logo -->
+      <a href="/" class="header__logo" aria-label="AI & Tech Newsletter home">
+        <div class="header__logo-icon" aria-hidden="true"><i class="fa-solid fa-bolt"></i></div>
+        <span class="header__logo-name">AI<span>&</span>Tech</span>
+      </a>
+
+      <!-- Nav -->
+      <nav class="header__nav" aria-label="Primary navigation">
+        <a href="#top-stories">Top Stories</a>
+        <a href="#" aria-label="AI section">Artificial Intelligence</a>
+        <a href="#" aria-label="Startups section">Startups</a>
+        <a href="#" aria-label="Security section">Security</a>
+      </nav>
+
+      <!-- Actions -->
+      <div class="header__actions">
+        <div class="header__status" aria-label="Feed status">
+          <span class="header__status-dot" aria-hidden="true"></span>
+          <span id="live-time" aria-live="polite"></span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main id="main-content">
+
+    <!-- ===== HERO SECTION ================================================== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="hero__inner">
+
+          <div class="hero__text">
+            <div class="hero__eyebrow" aria-label="Section label">
+              <i class="fa-solid fa-satellite-dish" aria-hidden="true"></i>
+              Daily Intelligence Feed
+            </div>
+            <h1 class="hero__title" id="hero-title">
+              The tech news you<br /><em>actually need</em>
+            </h1>
+            <p class="hero__subtitle">
+              Top headlines in AI, startups, hardware, and cybersecurity —
+              filtered from thousands of sources and delivered fresh, every day.
+            </p>
+            <div class="hero__stats" role="list" aria-label="Newsletter stats">
+              <div role="listitem">
+                <span class="hero__stat-value">10+</span>
+                <span class="hero__stat-label">Daily stories</span>
+              </div>
+              <div role="listitem">
+                <span class="hero__stat-value">Live</span>
+                <span class="hero__stat-label">Feed refresh</span>
+              </div>
+              <div role="listitem">
+                <span class="hero__stat-value">Free</span>
+                <span class="hero__stat-label">Always</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MAIN CONTENT ================================================== -->
+    <section
+      class="main-content"
+      id="top-stories"
+      aria-labelledby="top-stories-title"
+    >
+      <div class="container">
+
+        <!-- Filter Bar -->
+        <div class="filters" id="filter-bar" role="group" aria-label="Filter articles by category">
+          <span class="filters__label" aria-hidden="true">Filter</span>
+
+          <button class="filter-chip is-active" data-filter="all"      aria-pressed="true"><i class="fa-solid fa-border-all"></i> All</button>
+          <button class="filter-chip" data-filter="ai"                  aria-pressed="false"><i class="fa-solid fa-microchip"></i> AI</button>
+          <button class="filter-chip" data-filter="startup"             aria-pressed="false"><i class="fa-solid fa-rocket"></i> Startups</button>
+          <button class="filter-chip" data-filter="games"               aria-pressed="false"><i class="fa-solid fa-gamepad"></i> Games</button>
+          <button class="filter-chip" data-filter="hardware"            aria-pressed="false"><i class="fa-solid fa-server"></i> Hardware</button>
+          <button class="filter-chip" data-filter="security"            aria-pressed="false"><i class="fa-solid fa-shield-halved"></i> Security</button>
+          <button class="filter-chip" data-filter="software"            aria-pressed="false"><i class="fa-solid fa-code"></i> Software</button>
+          <button class="filter-chip" data-filter="business"            aria-pressed="false"><i class="fa-solid fa-chart-line"></i> Business</button>
+        </div>
+
+        <!-- Section Header -->
+        <div class="section-header">
+          <h2 class="section-title" id="top-stories-title">Top Stories</h2>
+          <span class="section-count" id="article-count" aria-live="polite"></span>
+        </div>
+
+        <!-- Featured Article -->
+        <div
+          class="featured-article"
+          id="featured-article"
+          aria-label="Featured article"
+          aria-live="polite"
+        >
+          <!-- Injected by JS -->
+        </div>
+
+        <!-- News Grid -->
+        <div
+          class="news-grid"
+          id="news-grid"
+          role="list"
+          aria-label="News articles"
+          aria-live="polite"
+        >
+          <!-- Injected by JS -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== FOOTER ========================================================== -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="site-footer__inner">
+        <p class="site-footer__copy">
+          © <span id="footer-year"></span> AI&amp;Tech Newsletter. Powered by
+          Gustavo.
+        </p>
+        <nav class="site-footer__links" aria-label="Footer navigation">
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Footer year -->
+  <script>
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+  </script>
+
+  <!-- Main module -->
+  <script type="module" src="public/assets/js/main.js"></script>
+
+</body>
+</html>
